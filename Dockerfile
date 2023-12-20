@@ -21,7 +21,7 @@ COPY ./docs ../docs
 # Build the bundle
 RUN npm run build-prod
 
-FROM nginx:1.19
+FROM nginx:1.25.2
 
 # Remove the default nginx website
 RUN rm -rf /usr/share/nginx/html/*
