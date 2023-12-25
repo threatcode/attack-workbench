@@ -13,9 +13,9 @@ jobs:
 
       - name: Build and publish the Docker image
         run: |
-          echo $GITHUB_TOKEN | docker login ghcr.io -u center-for-threat-informed-defense --password-stdin
-          docker build . --tag ghcr.io/center-for-threat-informed-defense/attack-workbench-frontend:$IMAGE_TAG
-          docker push ghcr.io/center-for-threat-informed-defense/attack-workbench-frontend:$IMAGE_TAG
+          echo $GITHUB_TOKEN | docker login ghcr.io -u threatcode --password-stdin
+          docker build . --tag ghcr.io/threatcode/attack-workbench:$IMAGE_TAG
+          docker push ghcr.io/threatcode/attack-workbench:$IMAGE_TAG
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           IMAGE_TAG: "${{ github.ref == 'refs/head/master' && 'latest' || 'develop' }}"
