@@ -46,7 +46,7 @@
     "ngx-markdown": "^10.1.1",
     "ngx-material-file-input": "^2.1.1",
     "ngx-smart-popover": "^1.4.0",
-    "rxjs": "~6.6.0",
+    "rxjs": "~6.6.7",
     "tslib": "^2.6.2",
     "uuid": "^8.3.1",
     "zone.js": "~0.14.0"
